@@ -1,0 +1,35 @@
+.ranking-container {
+    padding: 40px;
+    min-height: 100vh;
+    background: #f3f4f6;
+    font-family: "Inter", sans-serif;
+}
+
+.ranking-container h1 {
+    margin-bottom: 30px;
+    color: #111827;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+thead {
+    background: #2563eb;
+    color: white;
+}
+
+th,td {
+    padding: 16px;
+    text-align: left;
+}
+
+tbody tr {
+    border tr:hover {
+        background: #f9fafb;
+    }
+}
