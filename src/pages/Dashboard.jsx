@@ -22,7 +22,12 @@ export default function Dashboard() {
   };
 
   const goToGame = () => {
-    navigate("/juego");
+    navigate("/juego-palabras");
+  };
+
+  // <-- Nueva función para redirigir a la Sopa de Letras
+  const goToSopa = () => {
+    navigate("/sopa-letras"); 
   };
 
   return (
@@ -43,10 +48,17 @@ export default function Dashboard() {
       {/* CONTENIDO */}
       <div className="container">
 
-        {/* JUEGO */}
+        {/* JUEGO 1: COMPLETAR PALABRAS */}
         <div className="card game-card" onClick={goToGame}>
           <h3>Completar palabras</h3>
           <p>Pon a prueba tu mente completando palabras</p>
+          <button className="play-btn">Jugar</button>
+        </div>
+
+        {/* JUEGO 2: SOPA DE LETRAS */}
+        <div className="card game-card" onClick={goToSopa}>
+          <h3>Sopa de Letras</h3>
+          <p>Encuentra las palabras ocultas en la cuadrícula</p>
           <button className="play-btn">Jugar</button>
         </div>
 
@@ -57,7 +69,7 @@ export default function Dashboard() {
         </div>
 
         {/* RANKING */}
-        <div className="card">
+        <div className="card" onClick={() => navigate("/ranking")}>
           <h3>Ranking</h3>
           <p>Compite con otros jugadores</p>
         </div>

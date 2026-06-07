@@ -69,6 +69,7 @@ p .register-link {
   background: #ffffff;
   color: #111827;
   font-size: 14px;
+  text-align: left;
 }
 
 .register-card input:focus,
