@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import "../assets/styles/register.css";
 import registroImg from "../assets/register_pro.png";
 
+
+console.log("API:", import.meta.env.VITE_API_URL);
 export default function Register() {
   const [form, setForm] = useState({
     nombre: "",
